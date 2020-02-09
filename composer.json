@@ -1,0 +1,35 @@
+{
+  "name": "alex-patterson-webdev/factory",
+  "version" : "1.0.0",
+  "authors": [
+    {
+      "name": "Alex Patterson",
+      "email": "alex.patterson.webdev@gmail.com"
+    }
+  ],
+  "require" : {
+    "php": "^7.2"
+  },
+  "require-dev" : {
+    "phpunit/phpunit" : "^8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Arp\\Factory\\" : "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ArpTest\\Factory\\" : "test/"
+    }
+  },
+  "config": {
+    "secure-http" : false
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://dev.satis.local"
+    }
+  ]
+}
