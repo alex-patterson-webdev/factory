@@ -1,21 +1,19 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Arp\Factory;
 
 use Arp\Factory\Exception\FactoryException;
 
 /**
- * FactoryInterface
- *
  * @author  Alex Patterson <alex.patterson.webdev@gmail.com>
  * @package Arp\Factory
  */
 interface FactoryInterface
 {
     /**
-     * Create a new service.
-     *
-     * @param array $config  The optional factory configuration options.
+     * @param array $config The optional factory configuration options.
      *
      * @return mixed
      *

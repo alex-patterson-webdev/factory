@@ -1,16 +1,24 @@
-<phpunit bootstrap="./vendor/autoload.php" colors="true">
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        bootstrap="./vendor/autoload.php"
+        verbose="true"
+        beStrictAboutOutputDuringTests="true"
+        beStrictAboutTestsThatDoNotTestAnything="true"
+        beStrictAboutTodoAnnotatedTests="true"
+        colors="true"
+>
     <testsuites>
-
-        <testsuite name="ApiClient">
-            <directory>./test</directory>
+        <testsuite name="factory">
+            <directory>./test/phpunit</directory>
         </testsuite>
-
     </testsuites>
 
     <filter>
-        <whitelist processUncoveredFilesFromWhitelist="true">
+        <whitelist processUncoveredFilesFromWhitelist="false">
             <directory suffix=".php">src</directory>
         </whitelist>
     </filter>
-
+    <logging>
+        <log type="coverage-clover" target="clover.xml"/>
+    </logging>
 </phpunit>

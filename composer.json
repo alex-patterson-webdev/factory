@@ -1,17 +1,19 @@
 {
   "name": "alex-patterson-webdev/factory",
-  "version" : "1.0.0",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "authors": [
     {
       "name": "Alex Patterson",
       "email": "alex.patterson.webdev@gmail.com"
     }
   ],
-  "require" : {
-    "php": "^7.2"
+  "require": {
+    "php": ">=7.3",
+    "psr/container": "^1.0.0"
   },
   "require-dev" : {
-    "phpunit/phpunit" : "^8"
+    "phpunit/phpunit" : "^9.1"
   },
   "autoload": {
     "psr-4": {
@@ -24,12 +26,8 @@
     }
   },
   "config": {
-    "secure-http" : false
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "http://dev.satis.local"
-    }
-  ]
+    "preferred-install": "dist",
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
 }
