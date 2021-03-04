@@ -1,7 +1,9 @@
 {
   "name": "alex-patterson-webdev/factory",
+  "description": "Generic interfaces and classes for creating other services",
   "minimum-stability": "dev",
   "prefer-stable": true,
+  "license": "MIT",
   "authors": [
     {
       "name": "Alex Patterson",
@@ -9,11 +11,10 @@
     }
   ],
   "require": {
-    "php": ">=7.3",
-    "psr/container": "^1.0.0"
+    "php": ">=7.4 || >=8.0"
   },
   "require-dev" : {
-    "phpunit/phpunit" : "^9.1"
+    "phpunit/phpunit" : "^9.5"
   },
   "autoload": {
     "psr-4": {
@@ -25,8 +26,10 @@
       "ArpTest\\Factory\\" : "test/"
     }
   },
+  "scripts": {
+    "test": "php vendor/bin/phpunit"
+  },
   "config": {
-    "preferred-install": "dist",
     "optimize-autoloader": true,
     "sort-packages": true
   }
